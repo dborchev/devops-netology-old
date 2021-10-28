@@ -7,4 +7,9 @@ https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/RE
 
 Добавим два файла `.gitignore`:
 + `./.gitignore` -- пуст и не делает ничего
-+ `terraform/.gitignore` -- копия [Terraform.gitignore](https://github.com/github/gitignore/blob/master/Terraform.gitignore) которая приводит к игнорированию всего дерева под `.terraform`, файлов состояний, логов, хранилищ переменных, конфигурационный файлы, а также файлы исключений (override) из общих правил
++ `terraform/.gitignore` -- копия [Terraform.gitignore](https://github.com/github/gitignore/blob/master/Terraform.gitignore) которая приводит к игнорированию:
+  +  содержимого директорий с именем `.terraform` по всему дереву
+  +  в директории `terraform`:
+    +  файлов с расширениями `.tfstate`, `.tfvars`, или содержащих `.tfstate.` в середине имени
+    +  файлов с именами `crash.log`, `override.tf`, `override.tf.json`, `.terraformrc`, `terraform.rc`
+    +  файлов имена которых оканчиваются на `_override.tf` или `_override.tf.json`

@@ -13,3 +13,7 @@ https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/RE
     +  файлов с расширениями `.tfstate`, `.tfvars`, или содержащих `.tfstate.` в середине имени
     +  файлов с именами `crash.log`, `override.tf`, `override.tf.json`, `.terraformrc`, `terraform.rc`
     +  файлов имена которых оканчиваются на `_override.tf` или `_override.tf.json`
+
+
+### Коммиты из IDE
+1. первый 
